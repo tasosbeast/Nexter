@@ -1,1 +1,19 @@
-node_modules
+# Compiled CSS (generated from Sass)
+css/
+*.css
+*.css.map
+
+# Node modules
+node_modules/
+
+# Build artifacts
+dist/
+build/
+
+# IDE files
+.vscode/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
