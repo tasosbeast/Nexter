@@ -3,9 +3,20 @@
 
   margin: 15rem 0;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
-  gap: 6rem;
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    gap: 6rem;
+  }
+
+  &__heading {
+    grid-column: 1 / -1;
+    margin-bottom: 6rem;
+  }
 }
 
 .feature {
