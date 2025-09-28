@@ -1,4 +1,6 @@
 .story {
+  display: contents;
+
   &__pictures {
     grid-column: full-start/ col-end 4;
     background-image: linear-gradient(
