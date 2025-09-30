@@ -1,8 +1,13 @@
 .story {
-  display: contents;
+  grid-column: full-start / full-end;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(30rem, 1fr));
+  column-gap: 6rem;
+  align-items: center;
 
   &__pictures {
-    grid-column: full-start/ col-end 4;
+    grid-column: 1 / 2;
     background-image: linear-gradient(
         rgba($color-primary, 0.5),
         rgba($color-primary, 0.5)
@@ -31,7 +36,7 @@
   }
 
   &__content {
-    grid-column: col-start 5 / full-end;
+    grid-column: 2 / 3;
 
     padding: 6rem 8vw;
     display: flex;
