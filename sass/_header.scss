@@ -23,17 +23,35 @@
   }
 
   &__seenon-text {
-    font-size: 1.4rem;
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    align-items: center;
+    column-gap: 1.5rem;
+    font-size: 1.6rem;
+    color: $color-grey-light-2;
     text-align: center;
+
+    &::before,
+    &::after {
+      content: "";
+      height: 1px;
+      display: block;
+      background-color: currentColor;
+    }
   }
 
   &__seenon-logos {
     display: flex;
-    gap: 1.2rem;
+    gap: 3rem;
     justify-content: center;
     img {
       height: 2.5rem;
+      filter: brightness(70%);
+      transition: all 0.5s;
+
+      &:hover {
+        filter: brightness(100%);
+      }
     }
   }
 
