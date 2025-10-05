@@ -1,4 +1,6 @@
-﻿.homes {
+@use "base" as *;
+
+.homes {
   grid-column: center-start/center-end;
   margin: 15rem 0;
   display: grid;
@@ -74,3 +76,4 @@
     grid-column: 1/-1;
   }
 }
+

@@ -318,6 +318,11 @@ body {
     grid-template-rows: repeat(2, min-content);
   }
 }
+@media only screen and (max-width: 37.5em) {
+  .story {
+    grid-template-columns: 1fr;
+  }
+}
 .story__pictures {
   grid-column: 1/2;
   background-image: linear-gradient(rgba(198, 153, 99, 0.5), rgba(198, 153, 99, 0.5)), url(../img/back.jpg);
@@ -332,6 +337,11 @@ body {
     grid-column: 1/-1;
     grid-row: 2/3;
     padding: 6rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story__pictures {
+    padding: 4rem;
   }
 }
 .story__img--1 {
@@ -375,6 +385,11 @@ body {
   .story__content {
     grid-column: 1/-1;
     grid-row: 1/2;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .story__content {
+    padding: 4rem;
   }
 }
 .story__text {

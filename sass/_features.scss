@@ -1,3 +1,5 @@
+@use "base" as *;
+
 .features {
   grid-column: center-start/center-end;
 
@@ -36,3 +38,4 @@
     font-size: 1.7rem;
   }
 }
+

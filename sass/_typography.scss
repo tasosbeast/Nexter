@@ -1,3 +1,5 @@
+@use "base" as *;
+
 %heading {
   font-family: $font-display;
   font-weight: 400;
@@ -77,3 +79,4 @@
 .mb-hg {
   margin-bottom: 8rem;
 }
+

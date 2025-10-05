@@ -1,3 +1,5 @@
+@use "base" as *;
+
 .sidebar {
   background-color: $color-primary;
   grid-column: sidebar-start/sidebar-end;
@@ -57,3 +59,4 @@
     }
   }
 }
+
