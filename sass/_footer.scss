@@ -5,6 +5,8 @@
 }
 
 .nav {
+  max-width: 97rem;
+  margin: 0 auto;
   &__link:link,
   &__link:visited {
     font-size: 1.2rem;
