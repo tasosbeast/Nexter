@@ -30,10 +30,10 @@
     @include respond("medium") {
       grid-column: 1/-1;
       grid-row: 2/3;
-      padding: 6rem;
+      padding: space("3xl");
     }
     @include respond("small") {
-      padding: 4rem;
+      padding: space("2xl");
     }
   }
 
@@ -66,7 +66,7 @@
   &__content {
     grid-column: 2 / 3;
     background-color: $color-grey-light-1;
-    padding: 6rem 8vw;
+    padding: space("3xl") 8vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -76,7 +76,7 @@
       grid-row: 1/2;
     }
     @include respond("small") {
-      padding: 4rem;
+      padding: space("2xl");
     }
   }
 
@@ -85,5 +85,6 @@
     font-style: italic;
   }
 }
+
 
 

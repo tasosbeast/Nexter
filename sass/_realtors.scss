@@ -5,18 +5,18 @@
   grid-column: col-start 7 / full-end;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: space("lg");
   text-align: center;
   justify-content: center;
-  padding: 3rem;
+  padding: space("xl");
 
   @include respond("medium") {
     grid-column: full-start / full-end;
-    padding: 4rem;
+    padding: space("2xl");
   }
 
   @include respond("small") {
-    padding: 3rem 2rem;
+    padding: space("xl") space("lg");
   }
 
   &__list {
@@ -24,7 +24,7 @@
     display: grid;
     grid-template-columns: min-content max-content;
     grid-template-rows: repeat(3, 1fr);
-    column-gap: 2rem;
+    column-gap: space("lg");
     row-gap: 5vh;
     justify-content: center;
     align-items: center;
@@ -37,8 +37,8 @@
     @include respond("small") {
       grid-template-columns: min-content 1fr;
       grid-template-rows: repeat(3, min-content);
-      column-gap: 1.5rem;
-      row-gap: 4rem;
+      column-gap: space("md");
+      row-gap: space("2xl");
     }
   }
 
@@ -54,6 +54,8 @@
     margin-top: -3px;
   }
 }
+
+
 
 
 

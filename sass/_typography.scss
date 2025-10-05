@@ -71,19 +71,20 @@
 }
 
 .mb-sm {
-  margin-bottom: 2rem;
+  margin-bottom: space("lg");
 }
 
 .mb-md {
-  margin-bottom: 3rem;
+  margin-bottom: space("xl");
 }
 
 .mb-lg {
-  margin-bottom: 4rem;
+  margin-bottom: space("2xl");
 }
 
 .mb-hg {
-  margin-bottom: 8rem;
+  margin-bottom: space("4xl");
 }
+
 
 

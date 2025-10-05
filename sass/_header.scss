@@ -12,11 +12,11 @@
 
   background-size: cover;
   background-position: center;
-  padding: 4rem;
+  padding: space("2xl");
   display: grid;
   grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
   grid-template-columns: minmax(min-content, max-content);
-  row-gap: 1.5rem;
+  row-gap: space("md");
   justify-content: center;
 
   @include respond("medium") {
@@ -32,7 +32,7 @@
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     align-items: center;
-    column-gap: 1.5rem;
+    column-gap: space("md");
     font-size: 1.6rem;
     color: $color-grey-light-2;
     text-align: center;
@@ -72,5 +72,6 @@
     justify-self: start;
   }
 }
+
 
 

@@ -21,7 +21,7 @@
   width: 4.5rem;
 
   background-color: white;
-  margin-top: 4rem;
+  margin-top: space("2xl");
 
   &:focus-visible {
     outline: 2px solid rgba(#fff, 0.7);
@@ -47,7 +47,7 @@
 
   @include respond("large") {
     margin-top: 0;
-    margin-right: 3rem;
+    margin-right: space("xl");
     width: 4rem;
 
     &::after {
@@ -64,6 +64,7 @@
     }
   }
 }
+
 
 
 
