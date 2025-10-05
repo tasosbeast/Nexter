@@ -274,7 +274,7 @@ body {
 }
 @media only screen and (max-width: 37.5em) {
   .realtors__list {
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: min-content max-content;
     grid-template-rows: repeat(3, min-content);
     column-gap: 1.5rem;
     row-gap: 4rem;
