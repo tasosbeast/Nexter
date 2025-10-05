@@ -10,10 +10,10 @@
 
   background-size: cover;
   background-position: center;
-  padding: 4rem 8rem;
+  padding: 4rem;
   display: grid;
-  grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-rows: 1fr min-content minmax(6rem, min-content) 1fr;
+  grid-template-columns: minmax(min-content, max-content);
   row-gap: 1.5rem;
   justify-content: center;
 
@@ -42,10 +42,16 @@
 
   &__seenon-logos {
     display: flex;
-    gap: 3rem;
+    align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
+    gap: clamp(1rem, 4vw, 6rem);
+
     img {
-      height: 2.5rem;
+      max-height: clamp(1.4rem, 2.5vw, 3rem);
+      max-width: clamp(6rem, 20vw, 14rem);
+      width: auto;
+      flex: 0 0 auto;
       filter: brightness(70%);
       transition: all 0.5s;
 
