@@ -95,6 +95,11 @@ body {
 .btn:hover {
   background-color: #b28451;
 }
+.btn:focus-visible {
+  background-color: #b28451;
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 3px;
+}
 
 .mb-sm {
   margin-bottom: 2rem;
@@ -135,6 +140,10 @@ body {
   width: 4.5rem;
   background-color: white;
   margin-top: 4rem;
+}
+.nav-btn:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.7);
+  outline-offset: 6px;
 }
 .nav-btn::before, .nav-btn::after {
   background-color: white;
@@ -555,9 +564,13 @@ body {
   display: block;
   transition: all 0.2s;
 }
-.nav__link:link:hover, .nav__link:visited:hover {
+.nav__link:link:hover, .nav__link:link:focus-visible, .nav__link:visited:hover, .nav__link:visited:focus-visible {
   background-color: rgba(255, 255, 255, 0.05);
   transform: translateY(-3px);
+}
+.nav__link:link:focus-visible, .nav__link:visited:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.4);
+  outline-offset: 2px;
 }
 
 .nav ul {
