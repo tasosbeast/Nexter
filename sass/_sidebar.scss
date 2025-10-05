@@ -6,7 +6,7 @@
   grid-row: 1 / -1;
   display: flex;
   justify-content: center;
-  @media only screen and (max-width: $bp-large) {
+  @include respond("large") {
     grid-row: 1/2;
     grid-column: full-start/full-end;
     justify-content: end;
@@ -45,7 +45,7 @@
     transform: translateY(-1.5rem);
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @include respond("large") {
     margin-top: 0;
     margin-right: 3rem;
     width: 4rem;
@@ -64,5 +64,6 @@
     }
   }
 }
+
 
 

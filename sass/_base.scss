@@ -20,6 +20,26 @@ $bp-large: 62.5em; //1000px
 $bp-medium: 50em; //800px
 $bp-small: 37.5em; //600px
 
+$breakpoints: (
+  "largest": $bp-largest,
+  "large": $bp-large,
+  "medium": $bp-medium,
+  "small": $bp-small
+);
+
+@mixin respond($breakpoint) {
+  $size: map-get($breakpoints, $breakpoint);
+
+  @if $size {
+    @media only screen and (max-width: $size) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint: #{$breakpoint}.";
+  }
+}
+
+
 *,
 *::before,
 *::after {
@@ -32,7 +52,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   scroll-behavior: smooth;
-  @media only screen and (max-width: $bp-largest) {
+  @include respond("largest") {
     font-size: 50%;
   }
 }
@@ -55,7 +75,7 @@ body {
     [center-end]
     minmax(6rem, 1fr) [full-end];
 
-  @media only screen and (max-width: $bp-large) {
+  @include respond("large") {
     grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
     grid-template-columns:
       [full-start]
@@ -66,7 +86,11 @@ body {
       minmax(6rem, 1fr) [full-end];
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond("medium") {
     grid-template-rows: 6rem calc(100vh - 6rem);
   }
 }
+
+
+
+

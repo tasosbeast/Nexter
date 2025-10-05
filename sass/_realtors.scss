@@ -10,9 +10,13 @@
   justify-content: center;
   padding: 3rem;
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond("medium") {
     grid-column: full-start / full-end;
     padding: 4rem;
+  }
+
+  @include respond("small") {
+    padding: 3rem 2rem;
   }
 
   &__list {
@@ -25,14 +29,16 @@
     justify-content: center;
     align-items: center;
 
-    @media only screen and (max-width: $bp-medium) {
+    @include respond("medium") {
       grid-template-columns: repeat(3, min-content max-content);
       grid-template-rows: min-content;
     }
 
-    @media only screen and (max-width: $bp-small) {
-      grid-template-columns: min-content max-content;
-      grid-template-rows: repeat(3, 1fr);
+    @include respond("small") {
+      grid-template-columns: min-content 1fr;
+      grid-template-rows: repeat(3, min-content);
+      column-gap: 1.5rem;
+      row-gap: 4rem;
     }
   }
 
@@ -48,3 +54,6 @@
     margin-top: -3px;
   }
 }
+
+
+

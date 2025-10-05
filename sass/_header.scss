@@ -19,7 +19,7 @@
   row-gap: 1.5rem;
   justify-content: center;
 
-  @media only screen and (max-width: $bp-medium) {
+  @include respond("medium") {
     grid-column: full-start/full-end;
   }
 
@@ -72,4 +72,5 @@
     justify-self: start;
   }
 }
+
 
