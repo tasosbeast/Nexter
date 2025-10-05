@@ -52,3 +52,5 @@ starter/
 |-- package.json    # scripts and dev dependencies
 `-- README.md
 ```
+
+live-preview: https://tasosbeast.github.io/Nexter/
